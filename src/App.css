@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin: auto;
+  width: 450px;
 }
 
 .App-logo {
@@ -35,4 +37,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.list-item{
+  list-style: none;
+  padding:18px 0 ;
+  width: 450px;
+}
+
+.taskBox{
+  width: 350px;
+
+}
+.form-btn{
+  margin-left: 12px;
+}
+.todoItem{
+  width: 350px;
+  text-align: left;
 }
