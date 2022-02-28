@@ -52,7 +52,12 @@
 .form-btn{
   margin-left: 12px;
 }
-.todoItem{
+.sty{
   width: 350px;
   text-align: left;
+}
+.sty1{
+  width: 350px;
+  text-align: left;
+  text-decoration: line-through;
 }
