@@ -18,9 +18,9 @@ const TodoList = ({todos,setTodos}) => {
         console.log(todo);
     } 
     return (
-             <div className="">
+             <div className="todos">
                 {todos.map((todo) =>(
-                    <li key={todo.id} className="list-item"><span style={{textDecoration: todo.completed ? "line-through" : ""}}>{todo.title}</span>
+                    <li key={todo.id} className="list-item"><div className="title" style={{textDecoration: todo.completed ? "line-through" : ""}}>{todo.title}</div>
                 
                     <button clasName="complete-btn"onClick={()=>handleComplete(todo)}>Complete</button>
                     <button className="delete-btn" onClick={()=>handleDelete(todo)}>Delete</button></li>
