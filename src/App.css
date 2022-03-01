@@ -1,7 +1,10 @@
+body{
+  background-color: rgb(43, 8, 77);
+}
 .App {
   text-align: center;
   margin: auto;
-  width: 450px;
+  width: 100%;
 }
 
 .App-logo {
@@ -39,25 +42,38 @@
   }
 }
 
-.list-item{
-  list-style: none;
-  padding:18px 0 ;
-  width: 450px;
+.container{
+  width: 550px;
+  margin-left:620px;
+  margin-top: 40px;
 }
-
+form{
+  width: 550px;
+}
 .taskBox{
-  width: 350px;
-
+  width: 500px;
 }
 .form-btn{
-  margin-left: 12px;
+  margin-left: 4px;
+  padding:1px 2px 1px 2px;
+  border-color: black;
+  border-radius: 22%;
+  background-color: rebeccapurple;
 }
-.sty{
-  width: 350px;
-  text-align: left;
+.todos{
+  margin-top: 20px;
+
 }
-.sty1{
-  width: 350px;
-  text-align: left;
-  text-decoration: line-through;
+.todos .list-item{
+  margin-top: 10px;
+  width: 548px;
+  list-style: none;
+  background-color: aliceblue;
+
 }
+.title{
+  width: 412px;
+  display: inline-block;
+  background-color: blanchedalmond;
+}
+
