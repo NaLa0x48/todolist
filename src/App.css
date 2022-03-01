@@ -77,3 +77,11 @@ form{
   background-color: blanchedalmond;
 }
 
+.complete-btn{
+  border-radius: 22%;
+  background-color: rgb(5, 82, 5);
+}
+.delete-btn{
+  border-radius: 22%;
+  background-color: rgb(131, 16, 16);
+}
