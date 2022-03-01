@@ -1,16 +1,18 @@
 import uniqid from 'uniqid'
-const Form = ({input,setInput,todos,setTodos}) => {
+import { useState } from 'react'
+const Form = ({todos,setTodos}) => {
+    const [task,setTask] = useState("");
     const onInputChange = (event) =>{
-        setInput(event.target.value);
+        setTask(event.target.value);
     }
     const onFormSubmit=(event)=>{
         event.preventDefault();
-        setTodos([...todos,{id:uniqid(),title:input,completed:false}])
-        setInput("");
+        setTodos([...todos,{id:uniqid(),title:task,completed:false}])
+        setTask("");
     }
     return (  <form>
                 <input className="taskBox"type="text" placeholder="Enter task"
-                value={input} required
+                value={task} required
                 onChange={onInputChange}></input>
                 <button className="form-btn" onClick={onFormSubmit}>add</button>
             </form>
